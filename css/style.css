@@ -1,0 +1,299 @@
+body {
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  letter-spacing: 1px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.slides-navigation {
+  z-index: 6;
+}
+
+.slides-navigation .prev,
+.slides-navigation .next {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev {
+  left: 10px;
+  background-image: url(../img/icons/back.png);
+}
+
+.slides-navigation a.next {
+  right: 10px;
+  background-image: url(../img/icons/next.png);
+}
+
+.titleMessage {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  top: 50%;
+  z-index: 5;
+  text-align: center;
+  margin-top: -125px;
+}
+
+.titleMessage .heading p {
+  color: #fff;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 100;
+  letter-spacing: 7px;
+}
+
+.main {
+  font-size: 50px;
+}
+
+.sub {
+  font-size: 23px;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.meImage {
+  max-width: 100%;
+}
+
+.contactSection {
+  background-color: #92a8d1;
+  color: #fff;
+}
+
+.contactButton {
+  color: #fff;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.contactButton:hover {
+  text-decoration: none;
+  color: #92a8d1;
+  background-color: #fff;
+}
+
+.ghButton {
+  color: #92a8d1;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #92a8d1;
+  border-radius: 2px;
+}
+
+.ghButton:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #92a8d1;
+}
+
+.liButton {
+  color: #92a8d1;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #92a8d1;
+  border-radius: 2px;
+}
+
+.liButton:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #92a8d1;
+}
+
+.gaButton {
+  color: #92a8d1;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #92a8d1;
+  border-radius: 2px;
+}
+
+.gaButton:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #92a8d1;
+}
+
+.skillsSection {
+  color: #fff;
+  background-color: #92a8d1;
+}
+
+.skill {
+  text-align: center;
+}
+
+.logo {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.section .heading {
+  text-align: center;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.items li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.itemsContainer {
+  width: 100%;
+}
+
+.items li img {
+  width: 100%;
+
+  -webkit-transition: all 0.2s linear, 1s;
+  -moz-transition: all 0.2s linear, 1s;
+  -o-transition: all 0.2s linear, 1s;
+  -ms-transition: all 0.2s linear, 1s;
+}
+
+.items .item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.items .icons {
+  position: absolute;
+  width: 90px;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  margin: -20px auto 0 -47px;
+  text-align: center;
+  z-index: 3;
+}
+
+.items {
+  padding: 1;
+}
+
+.items .icons i {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 9px;
+}
+
+.items a {
+  width: 40px;
+  height: 40px;
+  background-color: #92a8d1;
+  position: relative;
+  display: inline-block;
+
+  -webkit-transition: all 0.2s linear, 0.5s;
+  -moz-transition: all 0.2s linear, 0.5s;
+  -o-transition: all 0.2s linear, 0.5s;
+  -ms-transition: all 0.2s linear, 0.5s;
+}
+
+.items .imageOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+
+  -webkit-transition: all 0.2s linear, 1s;
+  -moz-transition: all 0.2s linear, 1s;
+  -o-transition: all 0.2s linear, 1s;
+  -ms-transition: all 0.2s linear, 1s;
+  /* -transition: all 0.2s linear, 1s; */
+}
+
+.items .item:hover .imageOverlay {
+  opacity: 1;
+}
+
+.items .openButton {
+  float: left;
+  left: -200px;
+}
+
+.items .projectLink {
+  float: right;
+  right: -200px;
+}
+
+.items .item:hover .openButton {
+  left: 0px;
+}
+
+.items .item:hover .projectLink {
+  right: 0px;
+}
+
+.items .item:hover img {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: all 0.2s linear, 1s;
+  -o-transform: all 0.2s linear, 1s;
+  -ms-transform: all 0.2s linear, 1s;
+}
+
+#navigation {
+  background-color: #92a8d1;
+  padding: 20px 10px;
+  z-index: 100;
+  width: 100%;
+}
+
+#navigation li {
+  padding: 0 10px;
+}
+
+#navigation li a {
+  color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background: url(../img/icons/menu.png);
+}
+
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
+
+#copyrightSection {
+  background-color: #263d42;
+  color: #fff;
+  padding: 30px 5px;
+}
+
+#copyrightSection p {
+  margin: 0;
+}
